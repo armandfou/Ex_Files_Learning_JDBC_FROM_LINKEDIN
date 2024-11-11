@@ -9,7 +9,7 @@ import java.util.List;
 public class JDBCExecutor {
 
     public static void main(String... args){
-        DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
+        DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost:5433",
                 "hplussport", "postgres", "password");
         try{
             Connection connection = dcm.getConnection();
